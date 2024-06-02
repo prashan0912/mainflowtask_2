@@ -1,0 +1,147 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-size: 16px;
+    color: #4b4848;
+}
+
+.navbar {
+    height: 60px;
+    background-color:black ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.logo {
+    height: 56px;
+    width: 128px;
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    margin-left: 10px;
+    color: #4b4848;
+
+}
+
+.border:hover {
+    /* border: white solid 2px; */
+    transform: scale(1.1);
+}
+
+.component {
+    width: 90%;
+}
+
+.component ul {
+    display: flex;
+    list-style: none;
+    color: #4b4848;
+
+
+}
+
+.component ul li a {
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-evenly;
+
+}
+
+.component ul li {
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+}
+
+
+
+
+
+.menu {
+    /* list-style-type: none; */
+    /* padding: 0; */
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+
+
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    background-color: transparent;
+    color: #4b4848;
+    border-radius: 4px;
+}
+
+.menu li a:hover {
+    background-color: white ;
+}
+.component li a:hover {
+    background-color: white ;
+}
+.menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f8f4f4;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu li ul li a {
+    color: #333;
+    padding: 10px;
+    background-color: #fff;
+    display: block;
+}
+
+.menu li ul li a:hover {
+    background-color: #f1f1f1;
+}
+
+.hero2{
+    height: 650px;
+    /* border:2px solid rgb(182, 14, 14); */
+    background-image: url(image.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    height: 500px;
+    width: 700px;
+    /* border: white 2px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: #4b4848;
+    text-decoration: double;
+}
+.content h1{
+    color:rgb(181, 68, 173);
+    font-weight: 900;
+    font-size: 5em;
+    font-style: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
