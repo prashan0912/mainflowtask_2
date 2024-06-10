@@ -1,59 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Form Validation
-            document.getElementById('myForm').addEventListener('submit', function(event) {
-                const username = document.getElementById('username').value;
-                const email = document.getElementById('email').value;
-
-                if (!username || !email) {
-                    alert('All fields are required.');
-                    event.preventDefault();
-                } else {
-                    alert('Form submitted successfully!');
-                }
-            });
-
-            // Interactive Menu
-            document.querySelectorAll('#menu > li').forEach(menuItem => {
-                menuItem.addEventListener('mouseenter', () => {
-                    const submenu = menuItem.querySelector('.submenu');
-                    if (submenu) {
-                        submenu.style.display = 'block';
-                    }
-                });
-
-                menuItem.addEventListener('mouseleave', () => {
-                    const submenu = menuItem.querySelector('.submenu');
-                    if (submenu) {
-                        submenu.style.display = 'none';
-                    }
-                });
-            });
-
-            // Dynamic Content Updates
-            document.getElementById('loadContent').addEventListener('click', function() {
-                const contentDiv = document.getElementById('content');
-                const dynamicContent = document.createElement('p');
-                dynamicContent.textContent = 'This is dynamically loaded content.';
-                contentDiv.appendChild(dynamicContent);
-            });
-        });
-    </script>
+    <script src="registration.js"></script>
     <title>Document</title>
 </head>
 <style>
-    *{
+    * {
         padding: 0%;
         margin: 0%;
         font-size: 25px;
     }
-    .box{
+
+    .box {
         border: 2px solid red;
         height: 690px;
         display: flex;
@@ -61,38 +23,44 @@
         align-items: center;
         background-image: url(image.png);
     }
-    .box2{
+
+    .box2 {
         border: 2px solid red;
         height: 400px;
         width: 500px;
         background-color: rgb(238, 172, 18);
         padding: 5px;
     }
-    .qw{
+
+    .qw {
         color: black;
 
     }
-    .er{
+
+    .er {
         color: black;
     }
-    #username{
+
+    #username {
         border-radius: 10px;
         width: 450px;
 
     }
-    #email{
+
+    #email {
         border-radius: 10px;
         width: 450px;
 
 
     }
-    #submit{
+
+    #submit {
         position: absolute;
         top: 300px;
         left: 730px;
     }
-
 </style>
+
 <body>
     <div class="box">
         <div class="box2">
@@ -103,9 +71,9 @@
                 <label for="email" class="er">Email:</label><br>
                 <input type="email" id="email" name="email" required>
                 <br>
-                <button type="submit"  id="submit">Submit</button> <br>
+                <button type="submit" id="submit">Submit</button> <br>
             </form>
-        
+
             <!-- Dynamic Content Updates -->
             <button id="loadContent">Load Content</button>
             <div id="content"></div>
@@ -113,6 +81,7 @@
         </div>
     </div>
 
-    
+
 </body>
+
 </html>
